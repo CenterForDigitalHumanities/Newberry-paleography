@@ -12,16 +12,18 @@
     --color-success: #28bd14;
     --color-link: #264aa0;
     --color-link-active: #557bd7;
-    --grid-maxWidth: 60rem;
+    --grid-maxWidth: 80rem;
     --grid-gutter: 2rem;
     --font-size: 1.6rem;
     --font-color: #333333;
     --font-family-sans: "Fira Sans", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Droid Sans", "Helvetica Neue", sans-serif;
+    --font-family-serif: 'EB Garamond', 'Times New Roman', serif;
     --font-family-mono: monaco, "Consolas", "Lucida Console", monospace;
 }
 
 html {
-    font-family: 'Fira Sans', 'Helvetica Neue', sans-serif;
+    font-family: var(--font-family-sans);
+    font-size: var(--font-size);
 }
 
 .container {
