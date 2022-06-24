@@ -4,6 +4,7 @@
     --bg-color: #ffffff;
     --bg-secondary-color: #f3f3f6;
     --color-primary: #14854F;
+    --color-secondary: #baebbc;
     --color-lightGrey: #d2d6dd;
     --color-grey: #747681;
     --color-darkGrey: #3f4144;
@@ -15,7 +16,7 @@
     --grid-gutter: 2rem;
     --font-size: 1.6rem;
     --font-color: #333333;
-    --font-family-sans: -apple-system, BlinkMacSystemFont, "Fira Sans", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Droid Sans", "Helvetica Neue", sans-serif;
+    --font-family-sans: "Fira Sans", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Droid Sans", "Helvetica Neue", sans-serif;
     --font-family-mono: monaco, "Consolas", "Lucida Console", monospace;
 }
 
@@ -110,17 +111,18 @@ facet {
     position: relative;
     cursor: pointer;
     transition: background-color .2s;
-    border-left: var(--color-primary) solid thin;
+    border-left: var(--color-secondary) solid thin;
     padding-left: calc(var(--grid-gutter)/4);
     font-size: smaller;
 }
 
 facet:hover {
-    background-color: var(--color-lightGrey);
+    background-color: var(--color-secondary);
 }
 
 facet.clicked {
     background-color: var(--color-grey);
+    color: var(--font-color);
 }
 
 facet::after {
@@ -194,7 +196,7 @@ dd {
     padding-right: 0;
     line-height: 1.42857143;
     margin: 0 auto;
-    color: var(--color-darkGrey);
+    color: var(--font-color);
     display: inline-block;
     padding-top: 6px;
     padding-bottom: 4px;
@@ -239,7 +241,7 @@ dd p {
 listing+ul li {
     margin: 0;
     background-color: var(--color-lightGrey);
-    border-bottom: 1px solid var(--color-grey);
+    border-bottom: 1px solid var(--color-secondary);
     padding: 0.1em 0.6em;
     display: flex;
     align-items: center;
@@ -436,7 +438,7 @@ header {
 .dropdown-menu>li>a:hover,
 .dropdown-menu>li>a:focus {
     text-decoration: none;
-    color: var(--color-darkGrey);
+    color: var(--font-color);
     background-color: var(--bg-secondary-color);
 }
 
@@ -469,7 +471,7 @@ li.leaf {
 }
 
 .nav>li>a {
-    color: var(--color-darkGrey);
+    color: var(--font-color);
     text-decoration: none;
     position: relative;
     font-weight: 400;
@@ -497,7 +499,7 @@ li.leaf {
     clear: both;
     font-weight: 400;
     line-height: 1.42857143;
-    color: var(--color-darkGrey);
+    color: var(--font-color);
     white-space: nowrap;
 }
 
@@ -508,7 +510,7 @@ li.leaf {
     height: 30px;
     position: absolute;
     cursor: pointer;
-    color: var(--color-darkGrey);
+    color: var(--font-color);
 }
 
 .hamburger-icon {
@@ -570,7 +572,7 @@ h3[id] {
     padding: 2% 0 1.5% 3%;
     color: #002a5c;
     margin: 0 0 20px;
-    border-bottom: 1px solid var(--color-link-active);
+    border-bottom: 1px solid var(--color-secondary);
     font-size: 2em;
 }
 
