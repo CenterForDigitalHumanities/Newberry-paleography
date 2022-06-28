@@ -27,6 +27,7 @@ html {
 }
 
 .container {
+    box-sizing: border-box;
     max-width: var(--grid-maxWidth);
     margin: 0 auto;
     width: 96%;
