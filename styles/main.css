@@ -651,7 +651,6 @@ summary:hover::not(details[open]>summary:first-of-type) {
         float: left;
         min-width: 160px;
         padding: 5px 0;
-        margin: 5px 0 0;
         list-style: none;
         font-size: 14px;
         text-align: left;
