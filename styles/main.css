@@ -598,6 +598,51 @@ summary:hover::not(details[open]>summary:first-of-type) {
     transform: rotate(90deg);
 }
 
+table {
+    margin: 10px 0;
+    padding: 0;
+    width: 100%;
+}
+
+table,thead,tbody,tr,th,td {
+    border-color: var(--color-lightGrey);
+}
+
+table,td,th {
+    vertical-align: middle;
+}
+
+caption,th,td {
+    text-align: left;
+}
+
+thead tr {
+    font-weight: 700;
+    background-color: var(--color-lightGrey);
+}
+
+td,th {
+    border-bottom: 0;
+    margin: 0;
+    padding: 5px 7px;
+}
+
+tbody tr {
+    border-bottom: 1px solid var(--color-lightGrey);
+}
+
+tr.odd {
+    background: var(--bg-color);
+}
+
+tr.info,tr.even,tr:nth-child(2n+2) {
+    background-color: var(--bg-secondary-color);
+}
+
+td.active {
+    background-color: var(--color-lightGrey);
+}
+
 /** end Imported CSS */
 @media screen and (max-width: 599px) {
     #site-name {
